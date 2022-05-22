@@ -1,4 +1,4 @@
-package com.kerimovikh.utils;
+package com.kerimovikh.dao;
 
 import com.kerimovikh.bean.UserAccount;
 import com.kerimovikh.config.SecurityConfig;
