@@ -33,13 +33,12 @@ public class UrlPatternUtils {
             urlPattern = servletPath + "/*";
             return urlPattern;
         }
-
         urlPattern = servletPath;
+
         boolean has = hasUrlPattern(servletContext, urlPattern);
         if (has) {
             return urlPattern;
         }
-
         int i = servletPath.lastIndexOf('.');
         if (i != -1) {
             String ext = servletPath.substring(i + 1);
@@ -50,7 +49,6 @@ public class UrlPatternUtils {
                 return urlPattern;
             }
         }
-
         return "/";
     }
 }

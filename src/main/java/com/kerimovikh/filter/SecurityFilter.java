@@ -5,12 +5,14 @@ import com.kerimovikh.request.UserRoleRequestWrapper;
 import com.kerimovikh.utils.AppUtils;
 import com.kerimovikh.utils.SecurityUtils;
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.util.List;
 
+@WebFilter("/*")
 public class SecurityFilter implements Filter {
 
     @Override
